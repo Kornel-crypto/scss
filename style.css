@@ -1,0 +1,77 @@
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+  margin: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 20px;
+  background-color: #3498db;
+  color: white;
+}
+.header .navbar ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  gap: 15px;
+}
+.header .navbar ul li a {
+  color: white;
+  text-decoration: none;
+}
+.header .navbar ul li a:hover {
+  text-decoration: underline;
+}
+.header h1 {
+  margin: 20px 0;
+}
+.header .btn-primary {
+  background-color: #2ecc71;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.header .btn-primary:hover {
+  background-color: rgb(36.616, 162.384, 89.948);
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+.gallery .card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  height: 150px;
+  font-weight: bold;
+}
+.gallery .card:hover {
+  background-color: rgb(225.2719665272, 239.9163179916, 249.7280334728);
+  color: white;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: rgb(33.1380753138, 125.1882845188, 186.8619246862);
+  color: white;
+}
+
+/*# sourceMappingURL=style.css.map */

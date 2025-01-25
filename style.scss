@@ -1,0 +1,73 @@
+// style.scss
+@import 'variables';
+@import 'mixin';
+
+body {
+  font-family: $font-family;
+  background-color: $bg-color;
+  color: $text-color;
+  margin: 0;
+}
+
+.header {
+  @include flex-center;
+  flex-direction: column;
+  text-align: center;
+  padding: $padding;
+  background-color: $primary-color;
+  color: white;
+
+  .navbar {
+    ul {
+      list-style: none;
+      display: flex;
+      padding: 0;
+      gap: 15px;
+
+      li a {
+        color: white;
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  h1 {
+    margin: 20px 0;
+  }
+
+  .btn-primary {
+    @include button-style($secondary-color, darken($secondary-color, 10%));
+  }
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: $padding;
+
+  .card {
+    @include flex-center;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    height: 150px;
+    font-weight: bold;
+
+    &:hover {
+      background-color: lighten($primary-color, 40%);
+      color: white;
+    }
+  }
+}
+
+.footer {
+  @include flex-center;
+  padding: $padding;
+  background-color: darken($primary-color, 10%);
+  color: white;
+}
